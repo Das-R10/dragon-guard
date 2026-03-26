@@ -16,6 +16,34 @@
     /* ─── Reset & Root ─────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+    .top-banner {
+      position: absolute;
+      top: 80px;        /* adjust based on your navbar height */
+      left: 40px;
+
+      background: rgba(0, 198, 255, 0.15);
+      backdrop-filter: blur(10px);
+
+      border: 1px solid rgba(0, 198, 255, 0.3);
+      color: #00c6ff;
+
+      padding: 8px 16px;
+      border-radius: 999px;
+
+      font-size: 13px;
+      font-weight: 500;
+
+      z-index: 10;
+      white-space: nowrap;
+    }
+
+    .top-banner span {
+      margin-left: 8px;
+      font-weight: 600;
+    }
+
+    
+
     :root {
       --bg:          #080a0d;
       --bg-1:        #0c0f14;
@@ -870,7 +898,10 @@
   </style>
 </head>
 <body>
-
+<div class="top-banner">
+  🚀 Coming Soon — DragonGuard launches - Q3 2026.
+  <span>Put request for early access today</span>
+</div>
 <!-- ─── Nav ──────────────────────────────────── -->
 <nav id="mainNav">
   <a href="#" class="nav-logo">
